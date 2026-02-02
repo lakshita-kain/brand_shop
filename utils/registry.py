@@ -1,0 +1,42 @@
+# def load_processed_uris(spark, table_name):
+#     try:
+#         df = spark.table(table_name).select("s3_uri").distinct()
+#         return set(row.s3_uri for row in df.collect())
+#     except Exception:
+#         return set()
+
+
+import os
+import pandas as pd
+from datetime import datetime
+
+REGISTRY_PATH = "data/processed_registry.csv"
+
+def load_processed_uris() -> set:
+    if not os.path.exists(REGISTRY_PATH):
+        return set()
+
+    df = pd.read_csv(REGISTRY_PATH)
+    return set(df["s3_uri"].unique())
+
+
+def append_to_registry(records: list[dict]):
+    """
+    records must contain: s3_uri, category
+    """
+    os.makedirs("data", exist_ok=True)
+
+    new_df = pd.DataFrame([
+        {
+            "s3_uri": r["s3_uri"],
+            "category": r["category"],
+            "processed_at": datetime.utcnow().isoformat()
+        }
+        for r in records
+    ])
+
+    if os.path.exists(REGISTRY_PATH):
+        existing = pd.read_csv(REGISTRY_PATH)
+        new_df = pd.concat([existing, new_df], ignore_index=True)
+
+    new_df.to_csv(REGISTRY_PATH, index=False)

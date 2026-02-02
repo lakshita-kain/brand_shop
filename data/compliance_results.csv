@@ -1,0 +1,331 @@
+s3_uri,category,user_prompt,compliance_output,raw_output
+s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall features the JK Tyre logo prominently, with no visible damage or unauthorized elements."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-09-23 at 4.07.42 PM (1).jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall displays the JK Tyre logo prominently and is in good condition."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-10-14 at 6.52.24 PM (1).jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall is well-maintained with clear branding and no visible damage."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-10-19 at 8.41.28 PM (2).jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall is well-maintained with clear visibility of the JK Tyre logo. The area appears clean and organized."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-10-26 at 5.01.02 PM.jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall displays the JK Tyre logo prominently, with no visible damage or unauthorized elements."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-11-12 at 4.00.37 PM.jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall displays the JK Tyre logo prominently. The area appears well-maintained with no visible damage."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-12-17 at 5.20.52 PM.jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall features a prominent JK Tyre logo in clear visibility. The overall setup appears well-maintained and clean."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-12-22 at 11.53.51 AM.jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall features a clear logo and is in good condition with no visible damage or unauthorized elements."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2025-12-28 at 4.23.10 PM (1).jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall features the JK Tyre logo prominently, with no visible damage or unauthorized elements."",
+  ""branding"": ""pass""
+}
+```"
+s3://algo-8-beat-optimization/brand-shop/brand_wall/WhatsApp Image 2026-01-09 at 10.21.22 AM (1).jpeg,brand_wall,"You are an expert brand compliance auditor for JK Tyre.
+
+Task:
+Analyze the provided image of a dealer's BRAND WALL.
+Your role is to ONLY describe observable attributes. 
+Finally, give a final pass/fail judgment.
+
+Instructions:
+- Base your analysis strictly on what is visible in the image.
+- If something is unclear or not visible, mark it as ""uncertain"".
+- Do NOT assume intent or hidden conditions.
+- Return output strictly in JSON format.
+
+Evaluate the following attributes:
+1. logo_visibility: clear / partially_obstructed / not_visible / uncertain
+2. physical_condition: intact / minor_damage / major_damage / uncertain
+3. cleanliness: clean / dusty / dirty / uncertain
+4. branding_correctness: correct / partially_correct / incorrect / uncertain
+5. unauthorized_elements: none / present / uncertain
+6. notes: short factual observations (string)
+7. branding: pass / fail
+
+Return JSON ONLY.",pass,"```json
+{
+  ""logo_visibility"": ""clear"",
+  ""physical_condition"": ""intact"",
+  ""cleanliness"": ""clean"",
+  ""branding_correctness"": ""correct"",
+  ""unauthorized_elements"": ""none"",
+  ""notes"": ""The dealer's brand wall features a clear JK Tyre logo, and the overall area appears well-maintained and organized."",
+  ""branding"": ""pass""
+}
+```"
