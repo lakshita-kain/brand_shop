@@ -12,3 +12,93 @@
 2026-02-02 16:22:33,634 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=2.8003s
 2026-02-02 16:28:48,478 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.373s
 2026-02-02 16:30:03,408 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=2.3465s
+2026-02-04 15:03:47,973 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=7.3058s
+2026-02-04 15:28:46,942 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=4.4583s
+2026-02-04 15:29:05,706 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=3.4155s
+2026-02-04 15:29:40,446 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=3.4357s
+2026-02-04 15:30:18,980 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=3.9618s
+2026-02-04 15:30:34,631 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=4.1285s
+2026-02-04 15:31:42,222 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.1837s
+2026-02-04 15:31:59,593 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=2.5642s
+2026-02-04 16:18:28,932 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.324s
+2026-02-04 16:26:01,512 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=7.3847s
+2026-02-04 16:31:17,602 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.2203s
+2026-02-04 16:31:18,547 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.3415s
+2026-02-04 16:56:26,416 | INFO | Cache hit for s3_uri: s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg
+2026-02-04 16:57:01,873 | INFO | Cache hit for s3_uri: s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg
+2026-02-04 16:57:02,706 | INFO | Cache hit for s3_uri: s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg
+2026-02-04 16:57:14,783 | INFO | Cache miss for s3_uri: s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg
+2026-02-04 16:57:18,986 | ERROR | Compliance pipeline failed
+Traceback (most recent call last):
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/api/app.py", line 117, in run_compliance
+    await loop.run_in_executor(
+    ...<3 lines>...
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/utils/data_push.py", line 32, in append_results
+    df = pd.concat([existing, df], ignore_index=True)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+    op = _Concatenator(
+        objs,
+    ...<8 lines>...
+        sort=sort,
+    )
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
+2026-02-04 16:57:18,988 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=4.2057s
+2026-02-05 11:47:05,687 | INFO | Cache miss for s3_uri: s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg
+2026-02-05 11:47:18,820 | ERROR | Compliance pipeline failed
+Traceback (most recent call last):
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/api/app.py", line 117, in run_compliance
+    await loop.run_in_executor(
+    ...<3 lines>...
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/utils/data_push.py", line 32, in append_results
+    df = pd.concat([existing, df], ignore_index=True)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+    op = _Concatenator(
+        objs,
+    ...<8 lines>...
+        sort=sort,
+    )
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
+2026-02-05 11:47:18,822 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=13.1363s
+2026-02-05 11:48:01,158 | ERROR | Compliance pipeline failed
+Traceback (most recent call last):
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/api/app.py", line 117, in run_compliance
+    await loop.run_in_executor(
+    ...<3 lines>...
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/utils/data_push.py", line 32, in append_results
+    df = pd.concat([existing, df], ignore_index=True)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+    op = _Concatenator(
+        objs,
+    ...<8 lines>...
+        sort=sort,
+    )
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
+2026-02-05 11:48:01,160 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=4.0827s
+2026-02-05 11:58:03,871 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=23.9485s
