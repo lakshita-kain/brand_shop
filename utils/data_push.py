@@ -1,20 +1,3 @@
-# from pyspark.sql import SparkSession
-# from pipeline.run_pipeline import run_brand_pipeline
-# from config.setting import PROCESSED_TABLE
-
-# def job_entrypoint(s3_uri, user_prompt=None):
-#     spark = SparkSession.builder.appName("DataPushJob").getOrCreate()
-
-#     df = run_brand_pipeline(
-#         s3_uri=s3_uri,
-#         user_prompt=user_prompt,
-#         spark=spark,
-#         processed_table=PROCESSED_TABLE
-#     )
-
-#     spark.createDataFrame(df).write.mode("append").saveAsTable(PROCESSED_TABLE)
-
-
 import os
 import pandas as pd
 from datetime import datetime
@@ -24,17 +7,26 @@ from utils.dlt_utils import DLTWriter
 
 OUTPUT_PATH = "data/compliance_results.csv"
 
-def append_results(df: pd.DataFrame):
+def append_results(data: Union[pd.DataFrame, Dict, List[Dict]]):
+    """
+    Append new compliance results to the CSV, accepting either
+    DataFrames or dict payloads from the API.
+    """
     os.makedirs("data", exist_ok=True)
+
+    # Normalize to DataFrame
+    if isinstance(data, pd.DataFrame):
+        df = data.copy()
+    elif isinstance(data, list):
+        df = pd.DataFrame(data)
+    else:
+        df = pd.DataFrame([data])
 
     if os.path.exists(OUTPUT_PATH):
         existing = pd.read_csv(OUTPUT_PATH)
         df = pd.concat([existing, df], ignore_index=True)
 
     df.to_csv(OUTPUT_PATH, index=False)
-
-
-
 
 
 def push_compliance_result_to_databricks(

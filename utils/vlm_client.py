@@ -1,21 +1,33 @@
+import httpx
 import base64
 import asyncio
 from io import BytesIO
 from typing import Any, Dict
-
-import httpx
-
 from config.setting import OPENAI_API_KEY
 
 JSON_APPENDIX = """
-IMPORTANT:
-Return JSON ONLY.
-The response MUST be a single valid JSON object.
-Do NOT use markdown, code blocks, or extra text.
-The JSON MUST include the key "branding" with value exactly:
-- "pass"
-- "fail"
-"""
+STRICT RULES:
+- Describe ONLY what is directly visible in the image.
+- Do NOT infer intent, ownership, or context beyond the image.
+- If something is not clearly visible, mark it as "uncertain".
+- Do NOT add explanations, reasoning steps, or recommendations.
+- Do NOT include any text outside the JSON response.
+
+FINAL OUTPUT REQUIREMENTS:
+- Return exactly ONE valid JSON object.
+- Do NOT use markdown, code blocks, or additional text.
+- All values must be lowercase strings.
+
+The JSON object MUST contain the following keys:
+- branding: "pass" or "fail"
+- notes: brief, factual visual observations only
+- jk_branding_presence: "present", "absent", or "uncertain"
+- competing_brand_presence: "none", "present", or "uncertain"
+- logo_correctness: "correct", "incorrect", or "uncertain"
+
+DEFINITION OF PASS / FAIL:
+- "pass" → JK Tyre branding is clearly present, logo appears correct, and no competing brands are visible.
+- "fail" → JK Tyre branding is absent, incorrect, unclear, or competing brands are visible."""
 
 OPENAI_API_URL = "https://api.openai.com/v1/chat/completions"
 OPENAI_MODEL = "gpt-4o-mini"
@@ -36,6 +48,8 @@ async def _call_openai_vlm_async(image, prompt: str) -> str:
             {
                 "role": "system",
                 "content": (
+                    "You are an expert brand compliance auditor for JK Tyre."
+                    "Your task is to analyze the provided image of a dealer’s brandshop and assess JK Tyre brand compliance."
                     "You are a strict JSON-only compliance auditor. "
                     "Return exactly one JSON object and nothing else."
                 ),

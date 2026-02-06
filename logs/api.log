@@ -102,3 +102,66 @@ Traceback (most recent call last):
 TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
 2026-02-05 11:48:01,160 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=4.0827s
 2026-02-05 11:58:03,871 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=23.9485s
+2026-02-05 17:13:29,822 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.6919s
+2026-02-05 17:13:36,042 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=401 | DURATION=0.0006s
+2026-02-05 17:13:42,648 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.4904s
+2026-02-05 17:15:01,484 | INFO | IP=127.0.0.1 | METHOD=GET | PATH=/docs | STATUS=200 | DURATION=0.0008s
+2026-02-05 17:15:01,669 | INFO | IP=127.0.0.1 | METHOD=GET | PATH=/openapi.json | STATUS=200 | DURATION=0.0085s
+2026-02-05 17:15:04,855 | INFO | IP=127.0.0.1 | METHOD=GET | PATH=/docs | STATUS=200 | DURATION=0.0003s
+2026-02-05 17:15:04,892 | INFO | IP=127.0.0.1 | METHOD=GET | PATH=/openapi.json | STATUS=200 | DURATION=0.0003s
+2026-02-05 17:15:22,320 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=422 | DURATION=0.0008s
+2026-02-05 17:15:24,143 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=422 | DURATION=0.0004s
+2026-02-05 17:15:25,775 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=422 | DURATION=0.0005s
+2026-02-05 17:15:26,334 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=422 | DURATION=0.0004s
+2026-02-05 17:16:13,678 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=401 | DURATION=0.0005s
+2026-02-05 17:16:29,455 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=4.2502s
+2026-02-05 17:16:53,308 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.9363s
+2026-02-06 11:27:17,659 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=13.6752s
+2026-02-06 11:35:26,533 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=4.2123s
+2026-02-06 11:39:14,533 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=4.2003s
+2026-02-06 11:39:43,965 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.3064s
+2026-02-06 11:42:41,728 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.2246s
+2026-02-06 11:48:25,299 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0085s
+2026-02-06 11:49:12,999 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0024s
+2026-02-06 11:49:15,552 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0009s
+2026-02-06 11:49:38,277 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0017s
+2026-02-06 11:49:53,663 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.002s
+2026-02-06 11:50:38,648 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0017s
+2026-02-06 11:51:34,300 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0025s
+2026-02-06 11:51:35,243 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0008s
+2026-02-06 11:51:36,142 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0008s
+2026-02-06 11:51:37,174 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0011s
+2026-02-06 11:52:37,107 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0046s
+2026-02-06 11:52:55,426 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=5.1941s
+2026-02-06 11:53:30,068 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=2.7843s
+2026-02-06 11:53:55,201 | INFO | IP=127.0.0.1 | METHOD=GET | PATH=/docs | STATUS=200 | DURATION=0.0002s
+2026-02-06 11:53:55,250 | INFO | IP=127.0.0.1 | METHOD=GET | PATH=/openapi.json | STATUS=200 | DURATION=0.005s
+2026-02-06 11:54:54,195 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=2.888s
+2026-02-06 12:00:37,243 | ERROR | Compliance pipeline failed
+Traceback (most recent call last):
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/api/app.py", line 107, in run_compliance
+    append_results(result_row)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/utils/data_push.py", line 32, in append_results
+    df = pd.concat([existing, df], ignore_index=True)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 382, in concat
+    op = _Concatenator(
+        objs,
+    ...<8 lines>...
+        sort=sort,
+    )
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "/Users/lakshita/Desktop/jk/_brandshop/brand_shop/venv/lib/python3.14/site-packages/pandas/core/reshape/concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
+2026-02-06 12:00:37,245 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=500 | DURATION=4.6422s
+2026-02-06 12:01:31,761 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.004s
+2026-02-06 12:01:42,125 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.4169s
+2026-02-06 12:02:17,072 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=4.1399s
+2026-02-06 12:12:53,901 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.7276s
+2026-02-06 12:13:09,332 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0011s
+2026-02-06 12:13:43,188 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.003s
+2026-02-06 12:13:43,871 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0028s
+2026-02-06 12:13:44,334 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0022s
+2026-02-06 12:13:44,915 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.001s

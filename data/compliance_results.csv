@@ -383,3 +383,10 @@ s3://algo-8-beat-optimization/brand-shop/brand_wall/BrandWall.jpg,brand_wall,,,"
   ""notes"": ""The dealer's brand wall displays the JK Tyre logo prominently and is in good condition."",
   ""branding"": ""pass""
 }",pass
+s3://algo-8-beat-optimization/brand-shop/main_signage/WhatsApp Image 2025-10-26 at 5.00.43 PM.jpeg,main_signage,string,,"{
+  ""branding"": ""fail"",
+  ""notes"": ""jk tyre branding is partially visible but the logo is not fully clear. competing brand presence is uncertain."",
+  ""jk_branding_presence"": ""present"",
+  ""competing_brand_presence"": ""uncertain"",
+  ""logo_correctness"": ""uncertain""
+}",fail
