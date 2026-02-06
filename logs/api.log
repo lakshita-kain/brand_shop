@@ -165,3 +165,5 @@ TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and D
 2026-02-06 12:13:43,871 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0028s
 2026-02-06 12:13:44,334 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0022s
 2026-02-06 12:13:44,915 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.001s
+2026-02-06 12:38:43,160 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=0.0069s
+2026-02-06 12:39:04,931 | INFO | IP=127.0.0.1 | METHOD=POST | PATH=/brand-compliance/run | STATUS=200 | DURATION=3.4393s

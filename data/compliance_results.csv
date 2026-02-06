@@ -390,3 +390,10 @@ s3://algo-8-beat-optimization/brand-shop/main_signage/WhatsApp Image 2025-10-26 
   ""competing_brand_presence"": ""uncertain"",
   ""logo_correctness"": ""uncertain""
 }",fail
+s3://algo-8-beat-optimization/brand-shop/tyre_display_area/WhatsApp Image 2025-12-17 at 5.23.30 PM.jpeg,tyre_display_area,,,"{
+  ""branding"": ""pass"",
+  ""notes"": ""tyres displayed on wall, clean area, no competing brands visible"",
+  ""jk_branding_presence"": ""present"",
+  ""competing_brand_presence"": ""none"",
+  ""logo_correctness"": ""correct""
+}",pass
